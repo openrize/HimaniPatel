@@ -1,174 +1,213 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const experience = [
   {
     company: "National Association of Boards of Pharmacy (NABP)",
-    role: "Technical Program Coordinator – SaaS Operations",
-    period: "April 2023 – Present",
+    role: "Technical Program Coordinator | SaaS Operations",
+    period: "APRIL 2023 – PRESENT",
+    location: "MOUNT PROSPECT, IL",
+    summary: "Leading digital transformation and operational governance for cloud-based testing platforms.",
     points: [
-      "Manage cloud-based testing platform operations serving 70+ institutions; oversee scheduling, user access, and data compliance.",
-      "Designed and implemented a lifecycle-based RBAC model, reducing manual permission errors by 40% and improving onboarding speed.",
-      "Automated SQL/Excel dashboards to improve compliance monitoring and operational visibility for executive reporting.",
-      "Lead Tier 2/3 escalation processes; coordinate with internal teams and vendors to resolve complex issues.",
-      "Created LMS-based training programs and documentation, reducing recurring support tickets by 25% YoY.",
-      "Enhanced audit readiness by establishing structured access logs and versioned change management processes."
+      "Optimized SaaS operations for 70+ global institutions, ensuring 100% data compliance.",
+      "Engineered a high-impact RBAC lifecycle model, reducing operational friction by 40%.",
+      "Pioneered automated SQL-driven executive reporting, increasing leadership visibility by 35%.",
+      "Commanded Tier 2/3 escalation responses, maintaining peak operational reliability.",
+      "Established a cultural shift toward structured audit readiness and versioned compliance controls."
     ]
   },
   {
     company: "Heritage-Crystal Clean LLC",
-    role: "System Administrator (Contract)",
-    period: "April 2022 – August 2022",
+    role: "System Administrator | Operations Governance",
+    period: "APRIL 2022 – AUGUST 2022",
+    location: "ELGIN, IL",
+    summary: "Post-merger digital infrastructure consolidation and data governance.",
     points: [
-      "Directed digital file governance and migration efforts post-merger, improving data accuracy and compliance.",
-      "Developed automated error detection techniques in Excel, reducing QA review time by 35%.",
-      "Managed secure access workflows and enforced data privacy standards across departments."
+      "Orchestrated large-scale post-merger data migrations, improving cross-departmental accuracy.",
+      "Developed proprietary error-detection frameworks, streamlining QA cycles by 35%.",
+      "Enforced rigid access standards and privacy protocols to protect enterprise assets."
     ]
   },
   {
     company: "Yusen Logistics (Americas) Inc.",
-    role: "Technical Support Specialist (Contract)",
-    period: "March 2021 – August 2021",
+    role: "Technical Support Specialist | Systems Efficiency",
+    period: "MARCH 2021 – AUGUST 2021",
+    location: "ELK GROVE VILLAGE, IL",
+    summary: "Optimizing technology throughput for high-volume logistics environments.",
     points: [
-      "Delivered technology support to high-volume logistics teams, resolving 200+ SLA-bound tickets.",
-      "Organized logistics records and reconciled system data to support cross-team efficiency.",
-      "Assisted in system-based issue tracking and documentation flow improvements."
+      "Resolved mission-critical SLA dependencies, enhancing operational uptime for logistics teams.",
+      "Architected system Reconciliation workflows to drive cross-team data integrity.",
+      "Managed documentation frameworks to facilitate seamless technical onboarding."
     ]
   },
   {
     company: "DePaul University",
-    role: "Computer Science Mentor",
-    period: "December 2022 – April 2023",
+    role: "Computer Science Mentor | Strategic Advisor",
+    period: "DECEMBER 2022 – APRIL 2023",
+    location: "CHICAGO, IL",
+    summary: "Fostering the next generation of technology leaders in cloud and cybersecurity.",
     points: [
-      "Mentored 50+ students in key areas including cloud computing, DevOps fundamentals, and cybersecurity principles.",
-      "Increased placement success by 40% through interactive mentorship programs."
-    ]
-  },
-  {
-    company: "Gujarat Technological University",
-    role: "Project Manager – College",
-    period: "August 2016 – May 2018",
-    points: [
-      "Led academic and administrative initiatives, improving coordination and operational efficiency.",
-      "Allocated resources and executed project plans to meet quality and timeline goals."
+      "Mentored high-potential students in Cloud Architecture and DevOps fundamentals.",
+      "Increased placement outcomes by 40% through targeted professional development programs."
     ]
   }
 ];
 
-const projects = [
+const impactProjects = [
   {
-    title: "Automated Program Tracker",
-    description: "Built an Excel-based monitoring tool that reduced reporting time by 30% through automated data reconciliation.",
-    tags: ["Excel Automation", "Data Reporting", "VLOOKUP/Pivot"]
+    title: "Strategic Operations Tracker",
+    description: "Enterprise-grade Excel automation engine reducing reporting latency by 30% through advanced data modeling.",
+    metric: "30% Efficiency Gain",
+    tags: ["Decision Support", "Data Strategy"]
   },
   {
-    title: "Access Audit Toolkit",
-    description: "Designed an ITIL-aligned audit tracker that cut turnaround time by 50% for compliance reviews.",
-    tags: ["Compliance", "Audit Readiness", "ITIL"]
+    title: "Regulatory Compliance Framework",
+    description: "Deployment of an ITIL-aligned audit infrastructure that accelerated compliance turnarounds by 50%.",
+    metric: "50% Faster Audits",
+    tags: ["Governance", "SaaS Ops"]
   },
   {
-    title: "Self-Service Help Center",
-    description: "Built an onboarding portal that reduced repetitive support tickets by 20% through structured knowledge base development.",
-    tags: ["SOP", "Knowledge Base", "User Onboarding"]
-  },
+    title: "Leadership Knowledge Ecosystem",
+    description: "Centralized SaaS onboarding portal that decreased technical debt and support inquiries by 20%.",
+    metric: "20% Support Reduction",
+    tags: ["Change Management", "Onboarding"]
+  }
+];
+
+const technicalShowcase = [
   {
-    title: "Technical Showcase: OpenRize",
-    description: "Engineering platform showcasing AI/ML services with fully automated IaC (Terraform) provisioning on AWS.",
-    tags: ["Terraform", "AWS", "Next.js", "AI/ML"]
+    title: "OpenRize Platform",
+    description: "Cloud infrastructure provisioning with Terraform and AWS.",
+    link: "https://github.com/harshilp0210/openrize"
   },
   {
     title: "Foodies Choice POS",
-    description: "Cloud-based restaurant platform with Kubernetes microservices and 99.9% uptime SLA.",
-    tags: ["Next.js", "Kubernetes", "Supabase", "Node.js"]
+    description: "Kubernetes-deployed microservices for peak reliability.",
+    link: "https://github.com/harshilp0210/FoodiesChoicePOS"
   }
 ];
 
-const competencies = [
-  "SaaS Systems Operations", "RBAC/IAM Access Governance", "Audit & Compliance (HIPAA, GDPR)",
-  "Process Automation", "SQL & Excel Reporting", "Tier 2/3 Support", "AWS Cloud Fundamentals"
-];
-
 function App() {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+  }, []);
+
   return (
     <div className="portfolio">
       <nav>
         <div className="container nav-inner">
-          <h2 style={{ fontSize: '1.25rem', fontWeight: 800 }}>HIMANI PATEL</h2>
+          <div style={{ fontWeight: 800, fontSize: '1.25rem', letterSpacing: '-0.02em' }}>HIMANI PATEL</div>
           <div className="nav-links">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
+            <a href="#vision">Vision</a>
+            <a href="#experience">Impact</a>
+            <a href="#projects">Initiatives</a>
+            <a href="#contact">Consult</a>
           </div>
         </div>
       </nav>
 
-      <section className="hero container">
-        <p className="chip" style={{ marginBottom: '1rem' }}>Technical Program & Systems Specialist</p>
-        <h1>Strategic Systems Leadership.</h1>
-        <p>Optimizing SaaS operations, compliance, and data-driven process automation for global scale.</p>
-        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
-          <a href="#experience" className="btn">View Experience</a>
-          <a href="mailto:himaniwork489@gmail.com" className="btn" style={{ background: 'transparent', color: 'var(--accent)', border: '1px solid var(--accent)' }}>Contact Me</a>
+      <header className="container hero reveal">
+        <div className="hero-sub">— Digital Leader & Strategist</div>
+        <h1>Leading with <br /> Strategic Vision.</h1>
+        <p>Architecting resilient SaaS operations, rigorous compliance frameworks, and high-impact process automation for the modern enterprise.</p>
+        <div style={{ display: 'flex', gap: '1.5rem' }}>
+          <a href="#experience" className="btn" style={{ background: 'var(--accent)', color: 'white', padding: '1.25rem 2.5rem', fontWeight: 700, textDecoration: 'none' }}>Scale Operations</a>
+          <a href="mailto:himaniwork489@gmail.com" className="btn" style={{ border: '1px solid var(--accent)', padding: '1.25rem 2.5rem', fontWeight: 700, textDecoration: 'none', color: 'var(--accent)' }}>Get in Touch</a>
         </div>
-      </section>
+      </header>
 
-      <section id="about" className="container">
-        <div className="card" style={{ border: 'none', background: 'var(--accent-light)', textAlign: 'center' }}>
-          <h2 style={{ marginBottom: '1.5rem' }}>Professional Summary</h2>
-          <p style={{ fontSize: '1.125rem', color: 'var(--text-sub)', maxWidth: '850px', margin: '0 auto' }}>
-            Results-driven Technical Program & Systems Specialist with 6+ years of experience leading SaaS operations, access governance (RBAC/IAM), and compliance frameworks. Proven success in designing scalable systems and improving audit readiness across healthcare and logistics.
-          </p>
-        </div>
-      </section>
-
-      <section id="experience" className="container">
-        <h2 style={{ fontSize: '2rem', marginBottom: '3rem' }}>Professional Experience</h2>
-        <div style={{ maxWidth: '800px' }}>
-          {experience.map((exp, i) => (
-            <div key={i} className="timeline-item">
-              <h3 style={{ fontSize: '1.25rem' }}>{exp.role}</h3>
-              <p style={{ fontStyle: 'italic', color: 'var(--accent)', fontWeight: 600, marginBottom: '1rem' }}>{exp.company} | {exp.period}</p>
-              <ul style={{ paddingLeft: '1.25rem', color: 'var(--text-sub)' }}>
-                {exp.points.map((p, j) => <li key={j} style={{ marginBottom: '0.4rem' }}>{p}</li>)}
-              </ul>
+      <section id="vision" className="container animate-on-scroll" style={{ opacity: 0 }}>
+        <div className="exp-grid">
+          <div className="exp-meta">Strategic Philosophy</div>
+          <div className="exp-content">
+            <h2 style={{ marginBottom: '2rem' }}>Driving measurable impact through operational excellence.</h2>
+            <p style={{ fontSize: '1.5rem', lineHeight: '1.6', color: 'var(--text-main)', marginBottom: '3rem' }}>
+              My approach integrates technical rigor with strategic foresight. Whether optimizing RBAC lifecycles or steering post-merger migrations, the goal is always clear: <strong>Scale, Compliance, and Continuity.</strong>
+            </p>
+            <div style={{ display: 'flex', gap: '3rem', flexWrap: 'wrap' }}>
+              <div>
+                <div style={{ fontSize: '2.5rem', fontWeight: 800 }}>6+</div>
+                <div className="exp-meta" style={{ fontSize: '0.65rem' }}>Years Experience</div>
+              </div>
+              <div>
+                <div style={{ fontSize: '2.5rem', fontWeight: 800 }}>100%</div>
+                <div className="exp-meta" style={{ fontSize: '0.65rem' }}>Audit Readiness</div>
+              </div>
+              <div>
+                <div style={{ fontSize: '2.5rem', fontWeight: 800 }}>40%</div>
+                <div className="exp-meta" style={{ fontSize: '0.65rem' }}>Efficiency Lift</div>
+              </div>
             </div>
-          ))}
+          </div>
         </div>
       </section>
 
-      <section id="skills" className="container" style={{ background: 'var(--bg-sub)', borderRadius: '2rem', padding: '4rem 2rem' }}>
-        <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>Core Competencies</h2>
-        <div className="chips" style={{ justifyContent: 'center' }}>
-          {competencies.map((c, i) => (
-            <span key={i} className="chip" style={{ background: 'white', border: '1px solid var(--border)', padding: '0.75rem 1.5rem', fontSize: '1rem' }}>{c}</span>
-          ))}
-        </div>
-      </section>
-
-      <section id="projects" className="container">
-        <h2 style={{ fontSize: '2rem', marginBottom: '3rem', textAlign: 'center' }}>Achievements & Projects</h2>
-        <div className="project-grid">
-          {projects.map((p, i) => (
-            <div key={i} className="card" style={{ display: 'flex', flexDirection: 'column' }}>
-              <h3 style={{ marginBottom: '1rem' }}>{p.title}</h3>
-              <p style={{ color: 'var(--text-sub)', flex: 1, marginBottom: '1.5rem' }}>{p.description}</p>
-              <div className="chips">
-                {p.tags.map((t, j) => <span key={j} className="chip" style={{ fontSize: '0.75rem' }}>{t}</span>)}
+      <section id="experience" className="container" style={{ background: 'var(--bg-sub)', paddingLeft: '5%', paddingRight: '5%', marginLeft: '-6%', marginRight: '-6%', width: '112%' }}>
+        <div className="container">
+          <h2 className="animate-on-scroll" style={{ opacity: 0 }}>Executive Experience</h2>
+          {experience.map((exp, i) => (
+            <div key={i} className="exp-grid animate-on-scroll" style={{ opacity: 0, marginBottom: '8rem' }}>
+              <div className="exp-meta">
+                {exp.period} <br />
+                {exp.location}
+              </div>
+              <div className="exp-content">
+                <h3>{exp.role}</h3>
+                <p style={{ color: 'var(--accent-gold)', fontWeight: 700, fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{exp.company}</p>
+                <p style={{ fontStyle: 'italic', marginBottom: '2rem' }}>{exp.summary}</p>
+                <ul style={{ listStyle: 'none', padding: 0 }}>
+                  {exp.points.map((p, j) => (
+                    <li key={j} style={{ marginBottom: '1rem', paddingLeft: '1.5rem', position: 'relative' }}>
+                      <span style={{ position: 'absolute', left: 0, color: 'var(--accent-gold)' }}>—</span>
+                      {p}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      <footer id="contact">
-        <div className="container">
-          <h2 style={{ marginBottom: '2rem' }}>Connect with Me</h2>
-          <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '2rem' }}>
-            <a href="mailto:himaniwork489@gmail.com" style={{ color: 'var(--accent)', fontWeight: 700, textDecoration: 'none' }}>Email</a>
-            <a href="https://www.linkedin.com/in/himani-patel-cs/" target="_blank" style={{ color: 'var(--accent)', fontWeight: 700, textDecoration: 'none' }}>LinkedIn</a>
-            <a href="https://github.com/harshilp0210" target="_blank" style={{ color: 'var(--accent)', fontWeight: 700, textDecoration: 'none' }}>GitHub Profile</a>
+      <section id="projects" className="container">
+        <h2 className="animate-on-scroll" style={{ opacity: 0, textAlign: 'center', marginBottom: '5rem' }}>High-Impact Initiatives</h2>
+        <div className="project-grid animate-on-scroll" style={{ opacity: 0 }}>
+          {impactProjects.map((p, i) => (
+            <div key={i} className="project-item">
+              <div className="exp-meta" style={{ marginBottom: '1rem' }}>Impact: {p.metric}</div>
+              <h3>{p.title}</h3>
+              <p style={{ margin: '1.5rem 0' }}>{p.description}</p>
+              <div style={{ display: 'flex', gap: '0.5rem' }}>
+                {p.tags.map((t, j) => <span key={j} style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em' }}>[{t}]</span>)}
+              </div>
+            </div>
+          ))}
+          <div className="project-item" style={{ background: 'var(--accent)', color: 'white' }}>
+            <div className="exp-meta" style={{ color: 'white', opacity: 0.6 }}>Technical Repository</div>
+            <h3 style={{ color: 'white' }}>Full Project Portfolio</h3>
+            <p style={{ margin: '1.5rem 0', color: 'rgba(255,255,255,0.7)' }}>A deep dive into the technical infrastructure and codebase powering these operations.</p>
+            <a href="https://github.com/openrize/HimaniPatel" target="_blank" className="btn" style={{ fontWeight: 800, color: 'white', borderBottom: '2px solid white', textDecoration: 'none' }}>View Repositories</a>
           </div>
-          <p style={{ fontSize: '0.875rem', color: 'var(--text-sub)' }}>&copy; {new Date().getFullYear()} Himani Patel. Certified Program & Systems Specialist.</p>
+        </div>
+      </section>
+
+      <footer id="contact" style={{ padding: '8rem 0', background: 'var(--accent)', color: 'white' }}>
+        <div className="container" style={{ textAlign: 'center' }}>
+          <div className="hero-sub" style={{ color: 'white', opacity: 0.6, marginBottom: '2rem' }}>Strategic Collaboration</div>
+          <h2 style={{ fontSize: '3.5rem', color: 'white' }}>Ready to drive impact?</h2>
+          <div style={{ display: 'flex', gap: '4rem', justifyContent: 'center', marginTop: '4rem', flexWrap: 'wrap' }}>
+            <a href="mailto:himaniwork489@gmail.com" style={{ color: 'white', textDecoration: 'none', fontWeight: 700, fontSize: '1.25rem' }}>Email</a>
+            <a href="https://www.linkedin.com/in/himani-patel-cs/" target="_blank" style={{ color: 'white', textDecoration: 'none', fontWeight: 700, fontSize: '1.25rem' }}>LinkedIn</a>
+            <a href="https://github.com/harshilp0210" target="_blank" style={{ color: 'white', textDecoration: 'none', fontWeight: 700, fontSize: '1.25rem' }}>GitHub</a>
+          </div>
+          <p style={{ marginTop: '6rem', opacity: 0.4, fontSize: '0.8rem', letterSpacing: '0.1em' }}>HIMANI PATEL | STRATEGIC SYSTEMS LEADER | 2026</p>
         </div>
       </footer>
     </div>

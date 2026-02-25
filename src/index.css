@@ -64,8 +64,13 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
-  padding: 2rem 0;
+  z-index: 9999;
+  /* Ensure it's on top */
+  padding: 1.5rem 0;
+  background: rgba(255, 255, 255, 0.95);
+  /* Solid-ish background */
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -87,11 +92,45 @@ nav {
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.15em;
-  transition: opacity 0.3s;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-gold);
+  transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
-  opacity: 0.6;
+  color: var(--accent-gold);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Button Interactivity */
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+}
+
+.btn:hover {
+  transform: translateY(-4px) scale(1.02);
+  filter: brightness(1.1);
+  box-shadow: 0 10px 20px -5px rgba(30, 41, 59, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px) scale(0.98);
 }
 
 /* Hero Section */

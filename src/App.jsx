@@ -52,38 +52,85 @@ const experience = [
   }
 ];
 
+const education = [
+  {
+    school: "University of Illinois Chicago (UIC)",
+    degree: "Bachelor of Science",
+    field: "Computer Science",
+    activities: ["ACM at UIC (Secretary)", "SEDS at UIC (Secretary)", "Women in Computer Science (WiCS)"]
+  },
+  {
+    school: "Harper College",
+    degree: "Associate Degree",
+    field: "General Studies",
+    activities: []
+  }
+];
+
+const certifications = [
+  { name: "Data-Driven Decision Making & Analysis", issuer: "Pryor Learning", date: "Apr 2024" },
+  { name: "Supply Chain Foundation: Analytics", issuer: "LinkedIn", date: "Feb 2024" },
+  { name: "Introduction to SQL", issuer: "DataCamp", date: "Oct 2023" },
+  { name: "Galactic Problem-Solver", issuer: "NASA International Space Apps Challenge", date: "Oct 2022" },
+  { name: "Programmer / Business Analyst", issuer: "48in48", date: "Oct 2022" },
+  { name: "Notary Public", issuer: "State of Illinois", date: "Exp. 2029" },
+  { name: "ExCPT Pharmacy Technician (CPhT)", issuer: "NCH", date: "Dec 2021" }
+];
+
+const skillGroups = [
+  {
+    category: "Program Management",
+    skills: ["Technical Program Management", "SaaS Operations", "Systems Thinking", "Strategic Planning", "Process Automation"]
+  },
+  {
+    category: "Technical",
+    skills: ["SQL", "RBAC Lifecycle Modeling", "ITIL Framework", "Cloud Architecture", "DevOps Fundamentals", "Data Modeling", "Disaster Recovery", "Post-merger Migrations"]
+  }
+];
+
 const impactProjects = [
   {
     title: "Strategic Operations Tracker",
     description: "Enterprise-grade Excel automation engine reducing reporting latency by 30% through advanced data modeling.",
     metric: "30% Efficiency Gain",
-    tags: ["Decision Support", "Data Strategy"]
+    tags: ["Decision Support", "Data Strategy"],
+    link: null
   },
   {
     title: "Regulatory Compliance Framework",
     description: "Deployment of an ITIL-aligned audit infrastructure that accelerated compliance turnarounds by 50%.",
     metric: "50% Faster Audits",
-    tags: ["Governance", "SaaS Ops"]
+    tags: ["Governance", "SaaS Ops"],
+    link: null
   },
   {
     title: "Leadership Knowledge Ecosystem",
     description: "Centralized SaaS onboarding portal that decreased technical debt and support inquiries by 20%.",
     metric: "20% Support Reduction",
-    tags: ["Change Management", "Onboarding"]
+    tags: ["Change Management", "Onboarding"],
+    link: null
+  },
+  {
+    title: "Robophins-Powerplay",
+    description: "Technical infrastructure and codebase project focused on systems design and operational reliability.",
+    metric: "Open Source",
+    tags: ["Infrastructure", "Systems Design"],
+    link: "https://github.com/openrize/HimaniPatel"
+  },
+  {
+    title: "Delta — NASA Space Apps Challenge",
+    description: "NASA International Space Apps Challenge contribution via SEDS at UIC, recognized as Galactic Problem-Solver.",
+    metric: "NASA Award",
+    tags: ["Space Tech", "Innovation"],
+    link: null
   }
 ];
 
-const technicalShowcase = [
-  {
-    title: "OpenRize Platform",
-    description: "Cloud infrastructure provisioning with Terraform and AWS.",
-    link: "https://github.com/harshilp0210/openrize"
-  },
-  {
-    title: "Foodies Choice POS",
-    description: "Kubernetes-deployed microservices for peak reliability.",
-    link: "https://github.com/harshilp0210/FoodiesChoicePOS"
-  }
+const volunteer = [
+  { role: "Secretary", org: "Association for Computing Machinery (ACM) at UIC" },
+  { role: "Secretary", org: "Students for the Exploration and Development of Space (SEDS) at UIC" },
+  { role: "Member", org: "AnitaB.org" },
+  { role: "Member", org: "Women in Computer Science (WiCS) at UIC" }
 ];
 
 function App() {
@@ -108,21 +155,24 @@ function App() {
             <a href="#vision">Vision</a>
             <a href="#experience">Impact</a>
             <a href="#projects">Initiatives</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
             <a href="#contact">Consult</a>
           </div>
         </div>
       </nav>
 
       <header className="container hero reveal">
-        <div className="hero-sub">— Digital Leader & Strategist</div>
+        <div className="hero-sub">— Digital Leader &amp; Strategist · Greater Chicago Area</div>
         <h1>Leading with <br /> Strategic Vision.</h1>
-        <p>Architecting resilient SaaS operations, rigorous compliance frameworks, and high-impact process automation for the modern enterprise.</p>
-        <div style={{ display: 'flex', gap: '1.5rem' }}>
+        <p>Technical Program &amp; SaaS Operations Specialist with 6+ years of experience. Architecting resilient SaaS operations, rigorous compliance frameworks, and high-impact process automation for the modern enterprise.</p>
+        <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
           <a href="#experience" className="btn" style={{ background: 'var(--accent)', color: 'white', padding: '1.25rem 2.5rem', fontWeight: 700, textDecoration: 'none' }}>Scale Operations</a>
           <a href="mailto:himaniwork489@gmail.com" className="btn" style={{ border: '1px solid var(--accent)', padding: '1.25rem 2.5rem', fontWeight: 700, textDecoration: 'none', color: 'var(--accent)' }}>Get in Touch</a>
         </div>
       </header>
 
+      {/* VISION */}
       <section id="vision" className="container animate-on-scroll" style={{ opacity: 0 }}>
         <div className="exp-grid">
           <div className="exp-meta">Strategic Philosophy</div>
@@ -131,7 +181,7 @@ function App() {
             <p style={{ fontSize: '1.5rem', lineHeight: '1.6', color: 'var(--text-main)', marginBottom: '3rem' }}>
               My approach integrates technical rigor with strategic foresight. Whether optimizing RBAC lifecycles or steering post-merger migrations, the goal is always clear: <strong>Scale, Compliance, and Continuity.</strong>
             </p>
-            <div style={{ display: 'flex', gap: '3rem', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '3rem', flexWrap: 'wrap', marginBottom: '3rem' }}>
               <div>
                 <div style={{ fontSize: '2.5rem', fontWeight: 800 }}>6+</div>
                 <div className="exp-meta" style={{ fontSize: '0.65rem' }}>Years Experience</div>
@@ -145,10 +195,19 @@ function App() {
                 <div className="exp-meta" style={{ fontSize: '0.65rem' }}>Efficiency Lift</div>
               </div>
             </div>
+            <div>
+              <div className="exp-meta" style={{ marginBottom: '0.75rem' }}>Languages</div>
+              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                {['English', 'Gujarati', 'Hindi', 'Spanish'].map((lang, i) => (
+                  <span key={i} style={{ fontSize: '0.8rem', fontWeight: 700, padding: '0.4rem 1rem', border: '1px solid var(--accent)', color: 'var(--accent)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>{lang}</span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
+      {/* EXPERIENCE */}
       <section id="experience" className="container" style={{ background: 'var(--bg-sub)', paddingLeft: '5%', paddingRight: '5%', marginLeft: '-6%', marginRight: '-6%', width: '112%' }}>
         <div className="container">
           <h2 className="animate-on-scroll" style={{ opacity: 0 }}>Executive Experience</h2>
@@ -176,6 +235,7 @@ function App() {
         </div>
       </section>
 
+      {/* PROJECTS */}
       <section id="projects" className="container">
         <h2 className="animate-on-scroll" style={{ opacity: 0, textAlign: 'center', marginBottom: '5rem' }}>High-Impact Initiatives</h2>
         <div className="project-grid animate-on-scroll" style={{ opacity: 0 }}>
@@ -184,28 +244,116 @@ function App() {
               <div className="exp-meta" style={{ marginBottom: '1rem' }}>Impact: {p.metric}</div>
               <h3>{p.title}</h3>
               <p style={{ margin: '1.5rem 0' }}>{p.description}</p>
-              <div style={{ display: 'flex', gap: '0.5rem' }}>
+              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: p.link ? '1rem' : 0 }}>
                 {p.tags.map((t, j) => <span key={j} style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em' }}>[{t}]</span>)}
               </div>
+              {p.link && (
+                <a href={p.link} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.8rem', color: 'var(--accent)', fontWeight: 700, textDecoration: 'none', borderBottom: '1px solid var(--accent)' }}>View Repository →</a>
+              )}
             </div>
           ))}
           <div className="project-item" style={{ background: 'var(--accent)', color: 'white' }}>
             <div className="exp-meta" style={{ color: 'white', opacity: 0.6 }}>Technical Repository</div>
             <h3 style={{ color: 'white' }}>Full Project Portfolio</h3>
             <p style={{ margin: '1.5rem 0', color: 'rgba(255,255,255,0.7)' }}>A deep dive into the technical infrastructure and codebase powering these operations.</p>
-            <a href="https://github.com/openrize/HimaniPatel" target="_blank" className="btn" style={{ fontWeight: 800, color: 'white', borderBottom: '2px solid white', textDecoration: 'none' }}>View Repositories</a>
+            <a href="https://github.com/openrize/HimaniPatel" target="_blank" rel="noopener noreferrer" className="btn" style={{ fontWeight: 800, color: 'white', borderBottom: '2px solid white', textDecoration: 'none' }}>View Repositories</a>
           </div>
         </div>
       </section>
 
+      {/* SKILLS */}
+      <section id="skills" className="container animate-on-scroll" style={{ opacity: 0, background: 'var(--bg-sub)', paddingLeft: '5%', paddingRight: '5%', marginLeft: '-6%', marginRight: '-6%', width: '112%' }}>
+        <div className="container">
+          <h2 style={{ marginBottom: '4rem' }}>Core Competencies</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
+            {skillGroups.map((group, i) => (
+              <div key={i}>
+                <div className="exp-meta" style={{ marginBottom: '1.5rem' }}>{group.category}</div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
+                  {group.skills.map((skill, j) => (
+                    <span key={j} style={{ fontSize: '0.78rem', fontWeight: 700, padding: '0.5rem 1rem', border: '1px solid var(--border)', color: 'var(--text-main)', letterSpacing: '0.04em', textTransform: 'uppercase' }}>{skill}</span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CERTIFICATIONS */}
+      <section className="container animate-on-scroll" style={{ opacity: 0 }}>
+        <h2 style={{ marginBottom: '4rem' }}>Certifications &amp; Licenses</h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
+          {certifications.map((cert, i) => (
+            <div key={i} style={{ borderLeft: '2px solid var(--accent-gold)', paddingLeft: '1.5rem' }}>
+              <div style={{ fontWeight: 800, fontSize: '0.95rem', marginBottom: '0.4rem' }}>{cert.name}</div>
+              <div className="exp-meta" style={{ fontSize: '0.7rem' }}>{cert.issuer}</div>
+              <div style={{ fontSize: '0.75rem', color: 'var(--accent)', marginTop: '0.25rem', fontWeight: 700 }}>{cert.date}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* EDUCATION */}
+      <section id="education" className="container animate-on-scroll" style={{ opacity: 0, background: 'var(--bg-sub)', paddingLeft: '5%', paddingRight: '5%', marginLeft: '-6%', marginRight: '-6%', width: '112%' }}>
+        <div className="container">
+          <h2 style={{ marginBottom: '4rem' }}>Education</h2>
+          {education.map((edu, i) => (
+            <div key={i} className="exp-grid" style={{ marginBottom: '4rem' }}>
+              <div className="exp-meta">{edu.degree}<br />{edu.field}</div>
+              <div className="exp-content">
+                <h3>{edu.school}</h3>
+                {edu.activities.length > 0 && (
+                  <ul style={{ listStyle: 'none', padding: 0, marginTop: '1rem' }}>
+                    {edu.activities.map((act, j) => (
+                      <li key={j} style={{ marginBottom: '0.5rem', paddingLeft: '1.5rem', position: 'relative', fontSize: '0.9rem' }}>
+                        <span style={{ position: 'absolute', left: 0, color: 'var(--accent-gold)' }}>—</span>
+                        {act}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* VOLUNTEER / LEADERSHIP */}
+      <section className="container animate-on-scroll" style={{ opacity: 0 }}>
+        <h2 style={{ marginBottom: '4rem' }}>Leadership &amp; Community</h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '2rem' }}>
+          {volunteer.map((v, i) => (
+            <div key={i} style={{ borderTop: '2px solid var(--accent)', paddingTop: '1.5rem' }}>
+              <div style={{ fontWeight: 800, fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--accent)', marginBottom: '0.5rem' }}>{v.role}</div>
+              <div style={{ fontWeight: 600, fontSize: '0.95rem' }}>{v.org}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* FOOTER / CONTACT */}
       <footer id="contact" style={{ padding: '8rem 0', background: 'var(--accent)', color: 'white' }}>
         <div className="container" style={{ textAlign: 'center' }}>
           <div className="hero-sub" style={{ color: 'white', opacity: 0.6, marginBottom: '2rem' }}>Strategic Collaboration</div>
           <h2 style={{ fontSize: '3.5rem', color: 'white' }}>Ready to drive impact?</h2>
           <div style={{ display: 'flex', gap: '4rem', justifyContent: 'center', marginTop: '4rem', flexWrap: 'wrap' }}>
-            <a href="mailto:himaniwork489@gmail.com" style={{ color: 'white', textDecoration: 'none', fontWeight: 700, fontSize: '1.25rem' }}>Email</a>
-            <a href="https://www.linkedin.com/in/himani-patel-cs/" target="_blank" style={{ color: 'white', textDecoration: 'none', fontWeight: 700, fontSize: '1.25rem' }}>LinkedIn</a>
-            <a href="https://github.com/harshilp0210" target="_blank" style={{ color: 'white', textDecoration: 'none', fontWeight: 700, fontSize: '1.25rem' }}>GitHub</a>
+            <a href="tel:7735411711" style={{ color: 'white', textDecoration: 'none', textAlign: 'center' }}>
+              <div style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', opacity: 0.6, marginBottom: '0.5rem' }}>Phone</div>
+              <div style={{ fontWeight: 700, fontSize: '1.1rem' }}>(773) 541-1711</div>
+            </a>
+            <a href="mailto:himaniwork489@gmail.com" style={{ color: 'white', textDecoration: 'none', textAlign: 'center' }}>
+              <div style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', opacity: 0.6, marginBottom: '0.5rem' }}>Email</div>
+              <div style={{ fontWeight: 700, fontSize: '1.1rem' }}>himaniwork489@gmail.com</div>
+            </a>
+            <a href="https://www.linkedin.com/in/himani-patel-cs/" target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'none', textAlign: 'center' }}>
+              <div style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', opacity: 0.6, marginBottom: '0.5rem' }}>LinkedIn</div>
+              <div style={{ fontWeight: 700, fontSize: '1.1rem' }}>himani-patel-cs</div>
+            </a>
+            <a href="https://github.com/openrize/HimaniPatel" target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'none', textAlign: 'center' }}>
+              <div style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', opacity: 0.6, marginBottom: '0.5rem' }}>GitHub</div>
+              <div style={{ fontWeight: 700, fontSize: '1.1rem' }}>openrize/HimaniPatel</div>
+            </a>
           </div>
           <p style={{ marginTop: '6rem', opacity: 0.4, fontSize: '0.8rem', letterSpacing: '0.1em' }}>HIMANI PATEL | STRATEGIC SYSTEMS LEADER | 2026</p>
         </div>

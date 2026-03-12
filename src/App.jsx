@@ -4,8 +4,8 @@ const experience = [
   {
     company: "National Association of Boards of Pharmacy (NABP)",
     role: "Program Supervising Coordinator | NAPLEX Advantage",
-    period: "FEB 2026 – PRESENT",
-    location: "MOUNT PROSPECT, IL · HYBRID",
+    period: "Feb 2026 – Present",
+    location: "Mount Prospect, IL · Hybrid",
     summary: "Leading end-to-end technical program operations for platform-based exam services in a regulated environment.",
     points: [
       "Lead end-to-end technical program operations, ensuring reliable, compliant, and efficient delivery of platform-based exam services.",
@@ -20,8 +20,8 @@ const experience = [
   {
     company: "National Association of Boards of Pharmacy (NABP)",
     role: "Program Coordinator | NAPLEX Advantage",
-    period: "FEB 2024 – FEB 2026",
-    location: "MOUNT PROSPECT, IL · HYBRID",
+    period: "Feb 2024 – Feb 2026",
+    location: "Mount Prospect, IL · Hybrid",
     summary: "Managed technical program workflows, schedules, and system operations to ensure efficient and accurate execution.",
     points: [
       "Managed technical program workflows, schedules, and system operations to ensure efficient and accurate execution.",
@@ -34,8 +34,8 @@ const experience = [
   {
     company: "National Association of Boards of Pharmacy (NABP)",
     role: "Exam Eligibility Assistant",
-    period: "APR 2023 – FEB 2024",
-    location: "MOUNT PROSPECT, IL · HYBRID",
+    period: "Apr 2023 – Feb 2024",
+    location: "Mount Prospect, IL · Hybrid",
     summary: "Verified system data and eligibility workflows, ensuring compliance and operational accuracy.",
     points: [
       "Verified system data and eligibility workflows, ensuring compliance and operational accuracy.",
@@ -47,8 +47,8 @@ const experience = [
   {
     company: "Openrize",
     role: "Founder & Digital Solutions Consultant",
-    period: "JAN 2022 – PRESENT",
-    location: "CHICAGO, IL · REMOTE",
+    period: "Jan 2022 – Present",
+    location: "Chicago, IL · Remote",
     summary: "Founded and lead a digital solutions consultancy delivering websites, automation, and operational systems for businesses.",
     points: [
       "Founded and lead a digital solutions consultancy delivering websites, automation, and operational systems for businesses.",
@@ -63,8 +63,8 @@ const experience = [
   {
     company: "DePaul University",
     role: "Computer Science Mentor",
-    period: "DEC 2022 – APR 2023",
-    location: "CHICAGO, IL · REMOTE · FREELANCE",
+    period: "Dec 2022 – Apr 2023",
+    location: "Chicago, IL · Remote · Freelance",
     summary: "Guided students in coding, software development, and technical projects.",
     points: [
       "Guided students in coding, software development, and technical projects.",
@@ -77,8 +77,8 @@ const experience = [
   {
     company: "Indo-American Center",
     role: "Marketing Operator",
-    period: "AUG 2022 – DEC 2022",
-    location: "CHICAGO, IL · HYBRID · APPRENTICESHIP",
+    period: "Aug 2022 – Dec 2022",
+    location: "Chicago, IL · Hybrid · Apprenticeship",
     summary: "Executed digital and offline marketing campaigns, ensuring alignment with brand objectives.",
     points: [
       "Executed digital and offline marketing campaigns, ensuring alignment with brand objectives.",
@@ -90,8 +90,8 @@ const experience = [
   {
     company: "Heritage-Crystal Clean LLC",
     role: "System Administrator",
-    period: "APR 2022 – AUG 2022",
-    location: "ELGIN, IL · ON-SITE · CONTRACT",
+    period: "Apr 2022 – Aug 2022",
+    location: "Elgin, IL · On-site · Contract",
     summary: "Administered Windows and network infrastructure, ensuring high availability and system reliability.",
     points: [
       "Administered Windows and network infrastructure, ensuring high availability and system reliability.",
@@ -104,8 +104,8 @@ const experience = [
   {
     company: "Chicago Academy High School",
     role: "Paraprofessional in STEM",
-    period: "AUG 2021 – APR 2022",
-    location: "CHICAGO, IL · HYBRID · FREELANCE",
+    period: "Aug 2021 – Apr 2022",
+    location: "Chicago, IL · Hybrid · Freelance",
     summary: "Assisted in STEM lessons and lab activities, mentoring students in science and technology projects.",
     points: [
       "Assisted in STEM lessons and lab activities, mentoring students in science and technology projects.",
@@ -117,8 +117,8 @@ const experience = [
   {
     company: "Yusen Logistics (Americas) Inc.",
     role: "Technical Support Specialist",
-    period: "MAR 2021 – AUG 2021",
-    location: "ELK GROVE VILLAGE, IL · ON-SITE · CONTRACT",
+    period: "Mar 2021 – Aug 2021",
+    location: "Elk Grove Village, IL · On-site · Contract",
     summary: "Provided technical support for enterprise systems, applications, and network infrastructure.",
     points: [
       "Provided technical support for enterprise systems, applications, and network infrastructure.",
@@ -130,22 +130,21 @@ const experience = [
   {
     company: "Dunkin'",
     role: "Assistant Manager",
-    period: "MAY 2018 – MAR 2021",
-    location: "CHICAGO, IL · ON-SITE · FULL-TIME",
+    period: "May 2018 – Mar 2021",
+    location: "Chicago, IL · On-site · Full-time",
     summary: "Led daily business operations, managing staff, workflows, and operational performance.",
     points: [
       "Led daily business operations, managing staff, workflows, and operational performance.",
       "Trained team members, improving operational efficiency and service delivery.",
       "Analyzed operational performance metrics and implemented process improvements.",
-      "Managed operational issues, ensuring smooth business continuity.",
-      "Developed leadership, operational management, and problem-solving skills."
+      "Managed operational issues, ensuring smooth business continuity."
     ]
   },
   {
     company: "Gujarat Technological University (GTU)",
     role: "Project Manager — College",
-    period: "AUG 2016 – MAY 2018",
-    location: "GUJARAT, INDIA · HYBRID · APPRENTICESHIP",
+    period: "Aug 2016 – May 2018",
+    location: "Gujarat, India · Hybrid · Apprenticeship",
     summary: "Managed end-to-end project planning, execution, and delivery with scope, timeline, and budget adherence.",
     points: [
       "Managed end-to-end project planning, execution, and delivery with scope, timeline, and budget adherence.",
@@ -159,7 +158,7 @@ const experience = [
 
 const education = [
   {
-    school: "University of Illinois Chicago (UIC)",
+    school: "University of Illinois Chicago",
     degree: "Bachelor of Science",
     field: "Computer Science",
     activities: [
@@ -215,37 +214,32 @@ const impactProjects = [
   {
     title: "Major League Hacking (MLH)",
     description: "Contributed to MLH hackathon initiatives leveraging Microsoft Power BI for data analytics and Google Cloud Platform for infrastructure and deployment.",
-    metric: "Jul 2022 – Apr 2023",
-    tags: ["Power BI", "GCP", "Data Analytics"],
-    link: null
+    date: "Jul 2022 – Apr 2023",
+    tags: ["Power BI", "GCP", "Data Analytics"]
   },
   {
     title: "Robophins-Powerplay",
     description: "Robotics and engineering project focused on systems design, strategic planning, and end-to-end project execution from design to delivery.",
-    metric: "Nov 2022 – Feb 2023",
-    tags: ["Project Engineering", "Strategic Planning"],
-    link: null
+    date: "Nov 2022 – Feb 2023",
+    tags: ["Project Engineering", "Strategic Planning"]
   },
   {
     title: "Intel one-API",
     description: "DevOps and database project built with Intel one-API framework, integrating Microsoft SQL Server for data pipelines and system operations.",
-    metric: "Oct 2022 – Dec 2022",
-    tags: ["DevOps", "SQL Server", "Intel one-API"],
-    link: null
+    date: "Oct 2022 – Dec 2022",
+    tags: ["DevOps", "SQL Server", "Intel one-API"]
   },
   {
     title: "Delta — SEDS at UIC",
     description: "NASA International Space Apps Challenge project via SEDS at UIC. Contributed to space technology systems using Active Directory and precision engineering.",
-    metric: "Oct 2022",
-    tags: ["Space Tech", "Active Directory", "NASA"],
-    link: null
+    date: "Oct 2022",
+    tags: ["Space Tech", "Active Directory", "NASA"]
   },
   {
     title: "Chicago Asian Ink",
     description: "Digital solutions project supporting a community arts organization, involving Visual Basic scripting, conflict resolution workflows, and operational support.",
-    metric: "May 2021 – Aug 2021",
-    tags: ["Visual Basic", "Community", "Operations"],
-    link: null
+    date: "May 2021 – Aug 2021",
+    tags: ["Visual Basic", "Community", "Operations"]
   }
 ];
 
@@ -274,20 +268,18 @@ function App() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('reveal');
-        }
+        if (entry.isIntersecting) entry.target.classList.add('reveal');
       });
-    }, { threshold: 0.1 });
-
+    }, { threshold: 0.08 });
     document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
   }, []);
 
   return (
-    <div className="portfolio">
+    <div>
+      {/* NAV */}
       <nav>
         <div className="container nav-inner">
-          <div style={{ fontWeight: 800, fontSize: '1.25rem', letterSpacing: '-0.02em' }}>HIMANI PATEL</div>
+          <div className="nav-brand">Himani Patel</div>
           <div className="nav-links">
             <a href="#vision">Vision</a>
             <a href="#experience">Experience</a>
@@ -300,81 +292,93 @@ function App() {
       </nav>
 
       {/* HERO */}
-      <header className="container hero reveal">
-        <div className="hero-sub">— Technical Program & SaaS Operations Specialist · Greater Chicago Area</div>
-        <h1>Driving Reliability,<br />Governance & Scale.</h1>
-        <p>
-          6+ years of experience driving platform reliability, access governance (RBAC/IAM), compliance,
-          and operational efficiency in regulated environments — bridging technology, operations, and business.
-        </p>
-        <div style={{ marginBottom: '1.5rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-          {["Technical Program Management", "SaaS Operations", "Access Governance (RBAC/IAM)", "SQL & Workflow Automation"].map((tag, i) => (
-            <span key={i} style={{ fontSize: '0.72rem', fontWeight: 700, padding: '0.35rem 0.85rem', border: '1px solid var(--accent)', color: 'var(--accent)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>{tag}</span>
-          ))}
-        </div>
-        <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', marginTop: '1rem' }}>
-          <a href="#experience" className="btn" style={{ background: 'var(--accent)', color: 'white', padding: '1.25rem 2.5rem', fontWeight: 700, textDecoration: 'none' }}>View Experience</a>
-          <a href="mailto:himaniwork489@gmail.com" className="btn" style={{ border: '1px solid var(--accent)', padding: '1.25rem 2.5rem', fontWeight: 700, textDecoration: 'none', color: 'var(--accent)' }}>Get in Touch</a>
+      <header className="hero reveal">
+        <div className="container">
+          <div className="hero-eyebrow">Technical Program & SaaS Operations Specialist · Greater Chicago Area</div>
+          <h1>
+            Driving Reliability,<br />
+            Governance<br />
+            & Scale.
+          </h1>
+          <p>
+            6+ years of experience driving platform reliability, access governance (RBAC/IAM),
+            compliance, and operational efficiency in regulated environments — bridging technology,
+            operations, and business.
+          </p>
+          <div className="hero-tags">
+            {["Technical Program Management", "SaaS Operations", "Access Governance (RBAC/IAM)", "SQL & Workflow Automation"].map((tag, i) => (
+              <span key={i} className="hero-tag">{tag}</span>
+            ))}
+          </div>
+          <div style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap' }}>
+            <a href="#experience" className="btn btn-primary">View Experience</a>
+            <a href="mailto:himaniwork489@gmail.com" className="btn btn-outline">Get in Touch</a>
+          </div>
         </div>
       </header>
 
       {/* VISION */}
-      <section id="vision" className="container animate-on-scroll" style={{ opacity: 0 }}>
-        <div className="exp-grid">
-          <div className="exp-meta">Strategic Philosophy</div>
-          <div className="exp-content">
-            <h2 style={{ marginBottom: '2rem' }}>Bridging technology, operations, and business.</h2>
-            <p style={{ fontSize: '1.4rem', lineHeight: '1.6', color: 'var(--text-main)', marginBottom: '3rem' }}>
-              I specialize in building efficient systems, improving processes, and helping organizations scale through technology —
-              ensuring systems are <strong>reliable, scalable, and secure.</strong>
-            </p>
-
-            {/* Stats */}
-            <div style={{ display: 'flex', gap: '3rem', flexWrap: 'wrap', marginBottom: '3rem' }}>
-              <div>
-                <div style={{ fontSize: '2.5rem', fontWeight: 800 }}>6+</div>
-                <div className="exp-meta" style={{ fontSize: '0.65rem' }}>Years Experience</div>
-              </div>
-              <div>
-                <div style={{ fontSize: '2.5rem', fontWeight: 800 }}>11</div>
-                <div className="exp-meta" style={{ fontSize: '0.65rem' }}>Roles & Positions</div>
-              </div>
-              <div>
-                <div style={{ fontSize: '2.5rem', fontWeight: 800 }}>3+</div>
-                <div className="exp-meta" style={{ fontSize: '0.65rem' }}>Years at NABP</div>
-              </div>
+      <section id="vision" className="bg-ivory">
+        <div className="container animate-on-scroll" style={{ opacity: 0 }}>
+          <div className="exp-grid">
+            <div>
+              <div className="section-label">Philosophy</div>
             </div>
-
-            {/* Current Focus */}
-            <div style={{ marginBottom: '3rem' }}>
-              <div className="exp-meta" style={{ marginBottom: '0.75rem' }}>Open to Opportunities In</div>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                {["Technical Program Management", "SaaS Operations", "Systems Analysis", "Access Governance (IAM/RBAC)", "Technical Operations Leadership"].map((item, i) => (
-                  <span key={i} style={{ fontSize: '0.75rem', fontWeight: 700, padding: '0.4rem 1rem', border: '1px solid var(--accent-gold)', color: 'var(--accent-gold)', letterSpacing: '0.04em', textTransform: 'uppercase' }}>{item}</span>
-                ))}
+            <div>
+              <h2>Bridging technology,<br />operations, and business.</h2>
+              <div className="ornament">
+                <img src="/accent_divider.png" alt="ornamental divider" />
               </div>
-            </div>
+              <p style={{ fontSize: '1.05rem', lineHeight: '2', marginBottom: '3.5rem', color: 'var(--charcoal)', maxWidth: '620px' }}>
+                I specialize in building efficient systems, improving processes, and helping organizations
+                scale through technology — ensuring systems are <em>reliable, scalable, and secure.</em>
+              </p>
 
-            {/* Languages */}
-            <div style={{ marginBottom: '3rem' }}>
-              <div className="exp-meta" style={{ marginBottom: '0.75rem' }}>Languages</div>
-              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                {languages.map((l, i) => (
-                  <div key={i} style={{ textAlign: 'center' }}>
-                    <span style={{ display: 'block', fontSize: '0.8rem', fontWeight: 700, padding: '0.4rem 1rem', border: '1px solid var(--accent)', color: 'var(--accent)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>{l.lang}</span>
-                    <span style={{ fontSize: '0.65rem', color: 'var(--text-muted)', marginTop: '0.25rem', display: 'block' }}>{l.level}</span>
+              {/* Stats */}
+              <div style={{ display: 'flex', gap: '3.5rem', flexWrap: 'wrap', marginBottom: '4rem' }}>
+                {[
+                  { n: "6+", l: "Years Experience" },
+                  { n: "11", l: "Roles & Positions" },
+                  { n: "3+", l: "Years at NABP" }
+                ].map((s, i) => (
+                  <div key={i} className="stat-block">
+                    <div className="stat-num">{s.n}</div>
+                    <div className="stat-label">{s.l}</div>
                   </div>
                 ))}
               </div>
-            </div>
 
-            {/* Causes */}
-            <div>
-              <div className="exp-meta" style={{ marginBottom: '0.75rem' }}>Causes & Interests</div>
-              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                {causes.map((c, i) => (
-                  <span key={i} style={{ fontSize: '0.68rem', fontWeight: 600, padding: '0.3rem 0.7rem', background: 'var(--bg-sub)', border: '1px solid var(--border)', color: 'var(--text-muted)', letterSpacing: '0.04em' }}>{c}</span>
-                ))}
+              {/* Open to */}
+              <div style={{ marginBottom: '3.5rem' }}>
+                <div className="section-label" style={{ marginBottom: '1rem' }}>Open to Opportunities In</div>
+                <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
+                  {["Technical Program Management", "SaaS Operations", "Systems Analysis", "Access Governance (IAM/RBAC)", "Technical Operations Leadership"].map((item, i) => (
+                    <span key={i} className="skill-tag" style={{ color: 'var(--forest)', borderColor: 'var(--forest)' }}>{item}</span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Languages */}
+              <div style={{ marginBottom: '3.5rem' }}>
+                <div className="section-label" style={{ marginBottom: '1.25rem' }}>Languages</div>
+                <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
+                  {languages.map((l, i) => (
+                    <div key={i} className="lang-item">
+                      <span className="lang-name">{l.lang}</span>
+                      <span className="lang-level">{l.level}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Causes */}
+              <div>
+                <div className="section-label" style={{ marginBottom: '1rem' }}>Causes & Interests</div>
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                  {causes.map((c, i) => (
+                    <span key={i} className="cause-tag">{c}</span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -382,31 +386,31 @@ function App() {
       </section>
 
       {/* EXPERIENCE */}
-      <section id="experience" style={{ background: 'var(--bg-sub)', paddingLeft: '0', paddingRight: '0' }}>
+      <section id="experience" className="bg-cream">
         <div className="container">
-          <h2 className="animate-on-scroll" style={{ opacity: 0 }}>Professional Experience</h2>
+          <div className="section-label animate-on-scroll" style={{ opacity: 0, marginBottom: '3rem' }}>Professional History</div>
+          <h2 className="animate-on-scroll" style={{ opacity: 0, marginBottom: '0' }}>Experience</h2>
+          <div style={{ marginBottom: '1rem' }}><div className="rule" style={{ marginTop: '2rem' }}></div></div>
+
           {experience.map((exp, i) => (
-            <div key={i} className="exp-grid animate-on-scroll" style={{ opacity: 0, marginBottom: '6rem' }}>
+            <div key={i} className="exp-grid animate-on-scroll" style={{ opacity: 0 }}>
               <div className="exp-meta">
-                {exp.period} <br />
+                {exp.period}<br /><br />
                 {exp.location}
               </div>
               <div className="exp-content">
+                <div className="exp-company">{exp.company}</div>
                 <h3>{exp.role}</h3>
-                <p style={{ color: 'var(--accent-gold)', fontWeight: 700, fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{exp.company}</p>
-                <p style={{ fontStyle: 'italic', marginBottom: '2rem' }}>{exp.summary}</p>
-                <ul style={{ listStyle: 'none', padding: 0 }}>
+                <p className="exp-summary">{exp.summary}</p>
+                <ul className="exp-bullets">
                   {exp.points.map((p, j) => (
-                    <li key={j} style={{ marginBottom: '0.85rem', paddingLeft: '1.5rem', position: 'relative' }}>
-                      <span style={{ position: 'absolute', left: 0, color: 'var(--accent-gold)' }}>—</span>
-                      {p}
-                    </li>
+                    <li key={j}>{p}</li>
                   ))}
                 </ul>
                 {exp.openrizeLink && (
-                  <div style={{ marginTop: '2rem', display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
-                    <a href="https://www.openrize.com" target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--accent)', textDecoration: 'none', borderBottom: '1px solid var(--accent)' }}>www.openrize.com →</a>
-                    <a href="mailto:openrize@gmail.com" style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--accent-gold)', textDecoration: 'none', borderBottom: '1px solid var(--accent-gold)' }}>openrize@gmail.com</a>
+                  <div className="openrize-links">
+                    <a href="https://www.openrize.com" target="_blank" rel="noopener noreferrer" className="openrize-link">www.openrize.com ↗</a>
+                    <a href="mailto:openrize@gmail.com" className="openrize-link">openrize@gmail.com</a>
                   </div>
                 )}
               </div>
@@ -416,42 +420,48 @@ function App() {
       </section>
 
       {/* PROJECTS */}
-      <section id="projects" className="container">
-        <h2 className="animate-on-scroll" style={{ opacity: 0, textAlign: 'center', marginBottom: '5rem' }}>Projects</h2>
-        <div className="project-grid animate-on-scroll" style={{ opacity: 0 }}>
-          {impactProjects.map((p, i) => (
-            <div key={i} className="project-item">
-              <div className="exp-meta" style={{ marginBottom: '1rem' }}>{p.metric}</div>
-              <h3>{p.title}</h3>
-              <p style={{ margin: '1.5rem 0' }}>{p.description}</p>
-              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: p.link ? '1rem' : 0 }}>
-                {p.tags.map((t, j) => <span key={j} style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em' }}>[{t}]</span>)}
+      <section id="projects" className="bg-ivory">
+        <div className="container">
+          <div className="section-label animate-on-scroll" style={{ opacity: 0, marginBottom: '1.5rem' }}>Selected Work</div>
+          <h2 className="animate-on-scroll" style={{ opacity: 0, marginBottom: '4rem' }}>Projects</h2>
+          <div className="project-grid animate-on-scroll" style={{ opacity: 0 }}>
+            {impactProjects.map((p, i) => (
+              <div key={i} className="project-item">
+                <div className="project-date">{p.date}</div>
+                <h3>{p.title}</h3>
+                <p style={{ fontSize: '0.88rem', lineHeight: '1.8' }}>{p.description}</p>
+                <div className="project-tags">
+                  {p.tags.map((t, j) => <span key={j} className="project-tag-pill">{t}</span>)}
+                </div>
               </div>
-              {p.link && (
-                <a href={p.link} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.8rem', color: 'var(--accent)', fontWeight: 700, textDecoration: 'none', borderBottom: '1px solid var(--accent)' }}>View Repository →</a>
-              )}
+            ))}
+            <div className="project-item" style={{ background: 'var(--forest)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div>
+                <div className="project-date" style={{ color: 'var(--gold-light)', opacity: 0.75 }}>GitHub</div>
+                <h3 style={{ color: 'var(--ivory)', fontStyle: 'italic' }}>Full Project Portfolio</h3>
+                <p style={{ color: 'rgba(248,244,237,0.6)', fontSize: '0.88rem' }}>Explore the complete codebase and project repositories on GitHub.</p>
+              </div>
+              <a href="https://github.com/openrize/HimaniPatel" target="_blank" rel="noopener noreferrer"
+                className="btn btn-outline" style={{ marginTop: '2rem', alignSelf: 'flex-start' }}>
+                View Repositories
+              </a>
             </div>
-          ))}
-          <div className="project-item" style={{ background: 'var(--accent)', color: 'white' }}>
-            <div className="exp-meta" style={{ color: 'white', opacity: 0.6 }}>GitHub</div>
-            <h3 style={{ color: 'white' }}>Full Project Portfolio</h3>
-            <p style={{ margin: '1.5rem 0', color: 'rgba(255,255,255,0.7)' }}>Explore the complete technical codebase and project repositories.</p>
-            <a href="https://github.com/openrize/HimaniPatel" target="_blank" rel="noopener noreferrer" className="btn" style={{ fontWeight: 800, color: 'white', borderBottom: '2px solid white', textDecoration: 'none' }}>View Repositories</a>
           </div>
         </div>
       </section>
 
       {/* SKILLS */}
-      <section id="skills" className="animate-on-scroll" style={{ opacity: 0, background: 'var(--bg-sub)', padding: '10rem 0' }}>
-        <div className="container">
+      <section id="skills" className="bg-cream">
+        <div className="container animate-on-scroll" style={{ opacity: 0 }}>
+          <div className="section-label" style={{ marginBottom: '1.5rem' }}>Expertise</div>
           <h2 style={{ marginBottom: '4rem' }}>Core Competencies</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '3.5rem' }}>
             {skillGroups.map((group, i) => (
               <div key={i}>
-                <div className="exp-meta" style={{ marginBottom: '1.5rem' }}>{group.category}</div>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
+                <div className="exp-meta" style={{ marginBottom: '1.25rem', color: 'var(--forest)' }}>{group.category}</div>
+                <div>
                   {group.skills.map((skill, j) => (
-                    <span key={j} style={{ fontSize: '0.78rem', fontWeight: 700, padding: '0.5rem 1rem', border: '1px solid var(--border)', color: 'var(--text-main)', letterSpacing: '0.04em', textTransform: 'uppercase' }}>{skill}</span>
+                    <span key={j} className="skill-tag">{skill}</span>
                   ))}
                 </div>
               </div>
@@ -461,35 +471,40 @@ function App() {
       </section>
 
       {/* CERTIFICATIONS */}
-      <section className="container animate-on-scroll" style={{ opacity: 0 }}>
-        <h2 style={{ marginBottom: '4rem' }}>Certifications & Licenses</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
-          {certifications.map((cert, i) => (
-            <div key={i} style={{ borderLeft: '2px solid var(--accent-gold)', paddingLeft: '1.5rem' }}>
-              <div style={{ fontWeight: 800, fontSize: '0.95rem', marginBottom: '0.4rem' }}>{cert.name}</div>
-              <div className="exp-meta" style={{ fontSize: '0.7rem' }}>{cert.issuer}</div>
-              <div style={{ fontSize: '0.75rem', color: 'var(--accent)', marginTop: '0.25rem', fontWeight: 700 }}>{cert.date}</div>
-            </div>
-          ))}
+      <section className="bg-ivory">
+        <div className="container animate-on-scroll" style={{ opacity: 0 }}>
+          <div className="section-label" style={{ marginBottom: '1.5rem' }}>Credentials</div>
+          <h2 style={{ marginBottom: '3rem' }}>Certifications & Licenses</h2>
+          <div>
+            {certifications.map((cert, i) => (
+              <div key={i} className="cert-item">
+                <div className="cert-name">{cert.name}</div>
+                <div style={{ display: 'flex', gap: '2rem', alignItems: 'baseline', flexShrink: 0 }}>
+                  <span className="cert-meta">{cert.issuer}</span>
+                  <span className="cert-meta" style={{ color: 'var(--gold)' }}>{cert.date}</span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* EDUCATION */}
-      <section id="education" style={{ background: 'var(--bg-sub)', padding: '10rem 0' }}>
+      <section id="education" className="bg-cream">
         <div className="container">
-          <h2 className="animate-on-scroll" style={{ opacity: 0, marginBottom: '4rem' }}>Education</h2>
+          <div className="section-label animate-on-scroll" style={{ opacity: 0, marginBottom: '1.5rem' }}>Academic Formation</div>
+          <h2 className="animate-on-scroll" style={{ opacity: 0, marginBottom: '3rem' }}>Education</h2>
           {education.map((edu, i) => (
-            <div key={i} className="exp-grid animate-on-scroll" style={{ opacity: 0, marginBottom: '4rem' }}>
-              <div className="exp-meta">{edu.degree}<br />{edu.field}</div>
-              <div className="exp-content">
+            <div key={i} className="edu-item animate-on-scroll" style={{ opacity: 0 }}>
+              <div className="exp-meta">
+                {edu.degree}<br />{edu.field}
+              </div>
+              <div>
                 <h3>{edu.school}</h3>
                 {edu.activities.length > 0 && (
-                  <ul style={{ listStyle: 'none', padding: 0, marginTop: '1rem' }}>
+                  <ul className="exp-bullets" style={{ marginTop: '1rem' }}>
                     {edu.activities.map((act, j) => (
-                      <li key={j} style={{ marginBottom: '0.5rem', paddingLeft: '1.5rem', position: 'relative', fontSize: '0.9rem' }}>
-                        <span style={{ position: 'absolute', left: 0, color: 'var(--accent-gold)' }}>—</span>
-                        {act}
-                      </li>
+                      <li key={j}>{act}</li>
                     ))}
                   </ul>
                 )}
@@ -499,48 +514,46 @@ function App() {
         </div>
       </section>
 
-      {/* HONORS & LEADERSHIP */}
-      <section className="container animate-on-scroll" style={{ opacity: 0 }}>
-        <h2 style={{ marginBottom: '4rem' }}>Honors, Awards & Community</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '2rem' }}>
-          {volunteer.map((v, i) => (
-            <div key={i} style={{ borderTop: '2px solid var(--accent)', paddingTop: '1.5rem' }}>
-              <div style={{ fontWeight: 800, fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--accent)', marginBottom: '0.5rem' }}>{v.role}</div>
-              <div style={{ fontWeight: 600, fontSize: '0.95rem', marginBottom: '0.25rem' }}>{v.org}</div>
-              <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>{v.assoc}</div>
-            </div>
-          ))}
+      {/* HONORS */}
+      <section className="bg-ivory">
+        <div className="container animate-on-scroll" style={{ opacity: 0 }}>
+          <div className="section-label" style={{ marginBottom: '1.5rem' }}>Leadership</div>
+          <h2 style={{ marginBottom: '4rem' }}>Honors, Awards & Community</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '0.5rem 2rem' }}>
+            {volunteer.map((v, i) => (
+              <div key={i} className="honor-card">
+                <div className="honor-role">{v.role}</div>
+                <div className="honor-org">{v.org}</div>
+                <div className="honor-assoc">{v.assoc}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* FOOTER / CONTACT */}
-      <footer id="contact" style={{ padding: '8rem 0', background: 'var(--accent)', color: 'white' }}>
+      {/* FOOTER */}
+      <footer id="contact" className="footer">
         <div className="container" style={{ textAlign: 'center' }}>
-          <div className="hero-sub" style={{ color: 'white', opacity: 0.6, marginBottom: '2rem' }}>Let's Connect</div>
-          <h2 style={{ fontSize: '3.5rem', color: 'white' }}>Ready to drive impact?</h2>
-          <div style={{ display: 'flex', gap: '4rem', justifyContent: 'center', marginTop: '4rem', flexWrap: 'wrap' }}>
-            <a href="tel:7745411711" style={{ color: 'white', textDecoration: 'none', textAlign: 'center' }}>
-              <div style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', opacity: 0.6, marginBottom: '0.5rem' }}>Phone</div>
-              <div style={{ fontWeight: 700, fontSize: '1.1rem' }}>(774) 541-1711</div>
-            </a>
-            <a href="mailto:himaniwork489@gmail.com" style={{ color: 'white', textDecoration: 'none', textAlign: 'center' }}>
-              <div style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', opacity: 0.6, marginBottom: '0.5rem' }}>Email</div>
-              <div style={{ fontWeight: 700, fontSize: '1.1rem' }}>himaniwork489@gmail.com</div>
-            </a>
-            <a href="https://www.linkedin.com/in/himani-patel-cs/" target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'none', textAlign: 'center' }}>
-              <div style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', opacity: 0.6, marginBottom: '0.5rem' }}>LinkedIn</div>
-              <div style={{ fontWeight: 700, fontSize: '1.1rem' }}>himani-patel-cs</div>
-            </a>
-            <a href="https://www.openrize.com" target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'none', textAlign: 'center' }}>
-              <div style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', opacity: 0.6, marginBottom: '0.5rem' }}>Openrize</div>
-              <div style={{ fontWeight: 700, fontSize: '1.1rem' }}>www.openrize.com</div>
-            </a>
-            <a href="https://github.com/openrize/HimaniPatel" target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'none', textAlign: 'center' }}>
-              <div style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', opacity: 0.6, marginBottom: '0.5rem' }}>GitHub</div>
-              <div style={{ fontWeight: 700, fontSize: '1.1rem' }}>openrize/HimaniPatel</div>
-            </a>
+          <div className="footer-eyebrow">Strategic Collaboration</div>
+          <h2>Ready to drive impact?</h2>
+          <div className="footer-contact-grid" style={{ justifyContent: 'center' }}>
+            {[
+              { label: "Phone", value: "(774) 541-1711", href: "tel:7745411711" },
+              { label: "Email", value: "himaniwork489@gmail.com", href: "mailto:himaniwork489@gmail.com" },
+              { label: "LinkedIn", value: "himani-patel-cs", href: "https://www.linkedin.com/in/himani-patel-cs/" },
+              { label: "Openrize", value: "www.openrize.com", href: "https://www.openrize.com" },
+              { label: "GitHub", value: "openrize/HimaniPatel", href: "https://github.com/openrize/HimaniPatel" }
+            ].map((item, i) => (
+              <a key={i} href={item.href} target={item.href.startsWith('http') ? '_blank' : undefined}
+                rel="noopener noreferrer" className="footer-contact-item">
+                <div className="footer-contact-label">{item.label}</div>
+                <div className="footer-contact-value">{item.value}</div>
+              </a>
+            ))}
           </div>
-          <p style={{ marginTop: '6rem', opacity: 0.4, fontSize: '0.8rem', letterSpacing: '0.1em' }}>HIMANI PATEL | TECHNICAL PROGRAM & SAAS OPERATIONS SPECIALIST | 2026</p>
+          <div className="footer-bottom">
+            Himani Patel &nbsp;·&nbsp; Technical Program & SaaS Operations Specialist &nbsp;·&nbsp; 2026
+          </div>
         </div>
       </footer>
     </div>

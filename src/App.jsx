@@ -1,5 +1,21 @@
 import React, { useEffect } from 'react';
 
+const founderRole = {
+  company: "Openrize",
+  role: "Founder & Digital Solutions Consultant",
+  period: "Jan 2022 – Present",
+  location: "Chicago, IL · Remote",
+  summary: "Founded and currently lead a digital solutions consultancy delivering websites, automation, and operational systems for businesses.",
+  points: [
+    "Founded and currently lead a digital solutions consultancy delivering websites, automation, and operational systems for businesses.",
+    "Design and implement workflow automation, improving operational efficiency and reducing manual work.",
+    "Develop and deploy high-performance business websites optimized for scalability and user experience.",
+    "Implement POS systems, reporting solutions, and digital infrastructure to improve business operations.",
+    "Provide ongoing technical consulting, system optimization, and operational improvement strategies.",
+    "Help businesses improve online presence, operational efficiency, and technology adoption through tailored digital solutions."
+  ]
+};
+
 const experience = [
   {
     company: "National Association of Boards of Pharmacy (NABP)",
@@ -43,22 +59,6 @@ const experience = [
       "Supported reporting, workflow analysis, and process optimization initiatives.",
       "Collaborated with internal and external stakeholders to ensure efficient operations."
     ]
-  },
-  {
-    company: "Openrize",
-    role: "Founder & Digital Solutions Consultant",
-    period: "Jan 2022 – Present",
-    location: "Chicago, IL · Remote",
-    summary: "Founded and lead a digital solutions consultancy delivering websites, automation, and operational systems for businesses.",
-    points: [
-      "Founded and lead a digital solutions consultancy delivering websites, automation, and operational systems for businesses.",
-      "Design and implement workflow automation, improving operational efficiency and reducing manual work.",
-      "Develop and deploy high-performance business websites optimized for scalability and user experience.",
-      "Implement POS systems, reporting solutions, and digital infrastructure to improve business operations.",
-      "Provide ongoing technical consulting, system optimization, and operational improvement strategies.",
-      "Help businesses improve online presence, operational efficiency, and technology adoption."
-    ],
-    openrizeLink: true
   },
   {
     company: "DePaul University",
@@ -271,17 +271,20 @@ function App() {
         if (entry.isIntersecting) entry.target.classList.add('reveal');
       });
     }, { threshold: 0.08 });
+
     document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+    return () => observer.disconnect();
   }, []);
 
   return (
     <div>
-      {/* NAV */}
       <nav>
         <div className="container nav-inner">
           <div className="nav-brand">Himani Patel</div>
           <div className="nav-links">
             <a href="#vision">Vision</a>
+            <a href="#founder">Founder</a>
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
@@ -291,7 +294,6 @@ function App() {
         </div>
       </nav>
 
-      {/* HERO */}
       <header className="hero reveal">
         <div className="container">
           <div className="hero-eyebrow">Technical Program & SaaS Operations Specialist · Greater Chicago Area</div>
@@ -311,13 +313,12 @@ function App() {
             ))}
           </div>
           <div style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap' }}>
-            <a href="#experience" className="btn btn-primary">View Experience</a>
+            <a href="#founder" className="btn btn-primary">View Leadership</a>
             <a href="mailto:himaniwork489@gmail.com" className="btn btn-outline">Get in Touch</a>
           </div>
         </div>
       </header>
 
-      {/* VISION */}
       <section id="vision" className="bg-ivory">
         <div className="container animate-on-scroll" style={{ opacity: 0 }}>
           <div className="exp-grid">
@@ -334,7 +335,6 @@ function App() {
                 scale through technology — ensuring systems are <em>reliable, scalable, and secure.</em>
               </p>
 
-              {/* Stats */}
               <div style={{ display: 'flex', gap: '3.5rem', flexWrap: 'wrap', marginBottom: '4rem' }}>
                 {[
                   { n: "6+", l: "Years Experience" },
@@ -348,7 +348,6 @@ function App() {
                 ))}
               </div>
 
-              {/* Open to */}
               <div style={{ marginBottom: '3.5rem' }}>
                 <div className="section-label" style={{ marginBottom: '1rem' }}>Open to Opportunities In</div>
                 <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
@@ -358,7 +357,6 @@ function App() {
                 </div>
               </div>
 
-              {/* Languages */}
               <div style={{ marginBottom: '3.5rem' }}>
                 <div className="section-label" style={{ marginBottom: '1.25rem' }}>Languages</div>
                 <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
@@ -371,7 +369,6 @@ function App() {
                 </div>
               </div>
 
-              {/* Causes */}
               <div>
                 <div className="section-label" style={{ marginBottom: '1rem' }}>Causes & Interests</div>
                 <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
@@ -385,8 +382,48 @@ function App() {
         </div>
       </section>
 
-      {/* EXPERIENCE */}
-      <section id="experience" className="bg-cream">
+      <section id="founder" className="bg-cream">
+        <div className="container animate-on-scroll" style={{ opacity: 0 }}>
+          <div className="section-label" style={{ marginBottom: '1.5rem' }}>Leadership</div>
+          <h2 style={{ marginBottom: '0' }}>Founder — Openrize</h2>
+          <div style={{ marginBottom: '1rem' }}>
+            <div className="rule" style={{ marginTop: '2rem' }}></div>
+          </div>
+
+          <div className="exp-grid">
+            <div className="exp-meta">
+              {founderRole.period}<br /><br />
+              {founderRole.location}
+            </div>
+            <div className="exp-content">
+              <div className="exp-company">{founderRole.company}</div>
+              <h3>{founderRole.role}</h3>
+              <p className="exp-summary">{founderRole.summary}</p>
+              <ul className="exp-bullets">
+                {founderRole.points.map((p, i) => (
+                  <li key={i}>{p}</li>
+                ))}
+              </ul>
+
+              <div className="openrize-links">
+                <a
+                  href="https://www.openrize.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="openrize-link"
+                >
+                  www.openrize.com ↗
+                </a>
+                <a href="mailto:openrize@gmail.com" className="openrize-link">
+                  openrize@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" className="bg-ivory">
         <div className="container">
           <div className="section-label animate-on-scroll" style={{ opacity: 0, marginBottom: '3rem' }}>Professional History</div>
           <h2 className="animate-on-scroll" style={{ opacity: 0, marginBottom: '0' }}>Experience</h2>
@@ -407,20 +444,13 @@ function App() {
                     <li key={j}>{p}</li>
                   ))}
                 </ul>
-                {exp.openrizeLink && (
-                  <div className="openrize-links">
-                    <a href="https://www.openrize.com" target="_blank" rel="noopener noreferrer" className="openrize-link">www.openrize.com ↗</a>
-                    <a href="mailto:openrize@gmail.com" className="openrize-link">openrize@gmail.com</a>
-                  </div>
-                )}
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* PROJECTS */}
-      <section id="projects" className="bg-ivory">
+      <section id="projects" className="bg-cream">
         <div className="container">
           <div className="section-label animate-on-scroll" style={{ opacity: 0, marginBottom: '1.5rem' }}>Selected Work</div>
           <h2 className="animate-on-scroll" style={{ opacity: 0, marginBottom: '4rem' }}>Projects</h2>
@@ -441,8 +471,13 @@ function App() {
                 <h3 style={{ color: 'var(--ivory)', fontStyle: 'italic' }}>Full Project Portfolio</h3>
                 <p style={{ color: 'rgba(248,244,237,0.6)', fontSize: '0.88rem' }}>Explore the complete codebase and project repositories on GitHub.</p>
               </div>
-              <a href="https://github.com/openrize/HimaniPatel" target="_blank" rel="noopener noreferrer"
-                className="btn btn-outline" style={{ marginTop: '2rem', alignSelf: 'flex-start' }}>
+              <a
+                href="https://github.com/openrize/HimaniPatel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-outline"
+                style={{ marginTop: '2rem', alignSelf: 'flex-start' }}
+              >
                 View Repositories
               </a>
             </div>
@@ -450,8 +485,7 @@ function App() {
         </div>
       </section>
 
-      {/* SKILLS */}
-      <section id="skills" className="bg-cream">
+      <section id="skills" className="bg-ivory">
         <div className="container animate-on-scroll" style={{ opacity: 0 }}>
           <div className="section-label" style={{ marginBottom: '1.5rem' }}>Expertise</div>
           <h2 style={{ marginBottom: '4rem' }}>Core Competencies</h2>
@@ -470,8 +504,7 @@ function App() {
         </div>
       </section>
 
-      {/* CERTIFICATIONS */}
-      <section className="bg-ivory">
+      <section className="bg-cream">
         <div className="container animate-on-scroll" style={{ opacity: 0 }}>
           <div className="section-label" style={{ marginBottom: '1.5rem' }}>Credentials</div>
           <h2 style={{ marginBottom: '3rem' }}>Certifications & Licenses</h2>
@@ -489,8 +522,7 @@ function App() {
         </div>
       </section>
 
-      {/* EDUCATION */}
-      <section id="education" className="bg-cream">
+      <section id="education" className="bg-ivory">
         <div className="container">
           <div className="section-label animate-on-scroll" style={{ opacity: 0, marginBottom: '1.5rem' }}>Academic Formation</div>
           <h2 className="animate-on-scroll" style={{ opacity: 0, marginBottom: '3rem' }}>Education</h2>
@@ -514,8 +546,7 @@ function App() {
         </div>
       </section>
 
-      {/* HONORS */}
-      <section className="bg-ivory">
+      <section className="bg-cream">
         <div className="container animate-on-scroll" style={{ opacity: 0 }}>
           <div className="section-label" style={{ marginBottom: '1.5rem' }}>Leadership</div>
           <h2 style={{ marginBottom: '4rem' }}>Honors, Awards & Community</h2>
@@ -531,7 +562,6 @@ function App() {
         </div>
       </section>
 
-      {/* FOOTER */}
       <footer id="contact" className="footer">
         <div className="container" style={{ textAlign: 'center' }}>
           <div className="footer-eyebrow">Strategic Collaboration</div>
@@ -544,8 +574,13 @@ function App() {
               { label: "Openrize", value: "www.openrize.com", href: "https://www.openrize.com" },
               { label: "GitHub", value: "openrize/HimaniPatel", href: "https://github.com/openrize/HimaniPatel" }
             ].map((item, i) => (
-              <a key={i} href={item.href} target={item.href.startsWith('http') ? '_blank' : undefined}
-                rel="noopener noreferrer" className="footer-contact-item">
+              <a
+                key={i}
+                href={item.href}
+                target={item.href.startsWith('http') ? '_blank' : undefined}
+                rel="noopener noreferrer"
+                className="footer-contact-item"
+              >
                 <div className="footer-contact-label">{item.label}</div>
                 <div className="footer-contact-value">{item.value}</div>
               </a>

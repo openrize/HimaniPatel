@@ -538,7 +538,7 @@ function App() {
           <h2>Ready to drive impact?</h2>
           <div className="footer-contact-grid" style={{ justifyContent: 'center' }}>
             {[
-              { label: "Phone", value: "(774) 541-1711", href: "tel:7745411711" },
+              { label: "Phone", value: "(773) 541-1711", href: "tel:7735411711" },
               { label: "Email", value: "himaniwork489@gmail.com", href: "mailto:himaniwork489@gmail.com" },
               { label: "LinkedIn", value: "himani-patel-cs", href: "https://www.linkedin.com/in/himani-patel-cs/" },
               { label: "Openrize", value: "www.openrize.com", href: "https://www.openrize.com" },
